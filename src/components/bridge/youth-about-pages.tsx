@@ -55,12 +55,20 @@ export function YouthPage() {
 
   return (
     <div className="space-y-8">
-      <div className="bg-secondary/20 border-2 border-secondary/40 rounded-3xl p-8">
-        <div className="text-5xl mb-4">⭐</div>
-        <h1 className="font-serif font-black text-3xl sm:text-4xl text-foreground mb-3">Для молодёжи и волонтёров</h1>
-        <p className="text-muted-foreground text-lg max-w-xl">
-          Как помогать старшим — уважительно, терпеливо и эффективно. Без давления и без спешки.
-        </p>
+      <div className="bg-secondary/20 border-2 border-secondary/40 rounded-3xl p-8 flex flex-col sm:flex-row items-center gap-6">
+        <div className="flex-1">
+          <div className="text-5xl mb-4">⭐</div>
+          <h1 className="font-serif font-black text-3xl sm:text-4xl text-foreground mb-3">Для молодёжи и волонтёров</h1>
+          <p className="text-muted-foreground text-lg max-w-xl">
+            Как помогать старшим — уважительно, терпеливо и эффективно. Без давления и без спешки.
+          </p>
+        </div>
+        <img
+          src="https://cdn.poehali.dev/projects/dca81a1f-79e8-42d9-aa90-a134fc117a6d/files/acf9914b-85b8-4eb9-8f55-120ea78a2d72.jpg"
+          alt="Молодой человек помогает пожилому разобраться с планшетом"
+          className="w-44 sm:w-52 rounded-2xl shadow-lg object-cover flex-shrink-0 mx-auto sm:mx-0"
+          style={{ aspectRatio: "1/1" }}
+        />
       </div>
 
       <div className="bg-primary/10 border-2 border-primary/30 rounded-2xl p-6">
@@ -98,6 +106,12 @@ export function AboutPage({ navigate }: { navigate: (s: Section) => void }) {
   return (
     <div className="space-y-8">
       <div className="text-center py-6">
+        <img
+          src="https://cdn.poehali.dev/projects/dca81a1f-79e8-42d9-aa90-a134fc117a6d/files/4d0ff720-664f-454a-9894-7b5da6ada42b.jpg"
+          alt="Мост между поколениями"
+          className="w-64 sm:w-80 rounded-3xl shadow-lg object-cover mx-auto mb-6"
+          style={{ aspectRatio: "1/1" }}
+        />
         <div className="text-6xl mb-4">🌉</div>
         <h1 className="font-serif font-black text-3xl sm:text-4xl text-foreground mb-3">О проекте</h1>
         <p className="text-muted-foreground text-lg max-w-xl mx-auto">

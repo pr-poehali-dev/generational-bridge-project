@@ -22,6 +22,17 @@ export function HomePage({
         <p className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto mb-8">
           Помогаем пожилым людям уверенно разбираться в повседневных делах, а молодёжи — поддерживать старших без спешки и давления
         </p>
+
+        {/* Hero illustration */}
+        <div className="flex justify-center mb-8">
+          <img
+            src="https://cdn.poehali.dev/projects/dca81a1f-79e8-42d9-aa90-a134fc117a6d/files/4d0ff720-664f-454a-9894-7b5da6ada42b.jpg"
+            alt="Мост поколений — пожилые и молодые люди"
+            className="w-72 sm:w-96 rounded-3xl shadow-lg object-cover"
+            style={{ aspectRatio: "1/1" }}
+          />
+        </div>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={() => navigate("elderly")}
@@ -135,11 +146,32 @@ export function PhonePage({ navigate }: { navigate: (s: Section) => void }) {
         <button onClick={() => navigate("elderly")} className="text-primary hover:underline text-sm flex items-center gap-1 mb-4">
           <Icon name="ChevronLeft" size={16} /> Назад
         </button>
-        <div className="flex items-center gap-4 mb-2">
-          <span className="text-5xl">📱</span>
-          <h1 className="font-serif font-black text-3xl sm:text-4xl text-foreground">Телефон и связь</h1>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+          <div className="flex-1">
+            <div className="flex items-center gap-4 mb-2">
+              <span className="text-5xl">📱</span>
+              <h1 className="font-serif font-black text-3xl sm:text-4xl text-foreground">Телефон и связь</h1>
+            </div>
+            <p className="text-muted-foreground text-lg">Как звонить, писать сообщения и пользоваться телефоном</p>
+          </div>
+          <img
+            src="https://cdn.poehali.dev/projects/dca81a1f-79e8-42d9-aa90-a134fc117a6d/files/8a848929-842d-4c7e-a8ab-c90aa2d2166f.jpg"
+            alt="Смартфон с иконкой звонка"
+            className="w-36 sm:w-44 rounded-2xl shadow-md object-cover flex-shrink-0 mx-auto sm:mx-0"
+            style={{ aspectRatio: "1/1" }}
+          />
         </div>
-        <p className="text-muted-foreground text-lg">Как звонить, писать сообщения и пользоваться телефоном</p>
+        <div className="mt-6 bg-blue-50 border-2 border-primary/20 rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-5">
+          <img
+            src="https://cdn.poehali.dev/projects/dca81a1f-79e8-42d9-aa90-a134fc117a6d/files/69fbe449-437c-45d2-9987-f25df06a0a28.jpg"
+            alt="Пожилая женщина с телефоном"
+            className="w-32 rounded-2xl shadow object-cover flex-shrink-0"
+            style={{ aspectRatio: "1/1" }}
+          />
+          <p className="text-foreground text-base leading-relaxed font-medium">
+            Телефон — это просто инструмент. Как выучить новую дорогу: сначала страшно, потом привычно. Здесь всё объяснено по шагам — спокойно и без спешки.
+          </p>
+        </div>
       </div>
       <StepBlock title="Как позвонить" steps={[
         "Найдите зелёную трубку на экране и нажмите на неё",
@@ -183,11 +215,21 @@ export function BankPage({ navigate }: { navigate: (s: Section) => void }) {
         <button onClick={() => navigate("elderly")} className="text-primary hover:underline text-sm flex items-center gap-1 mb-4">
           <Icon name="ChevronLeft" size={16} /> Назад
         </button>
-        <div className="flex items-center gap-4 mb-2">
-          <span className="text-5xl">💳</span>
-          <h1 className="font-serif font-black text-3xl sm:text-4xl text-foreground">Банки и безопасность</h1>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+          <div className="flex-1">
+            <div className="flex items-center gap-4 mb-2">
+              <span className="text-5xl">💳</span>
+              <h1 className="font-serif font-black text-3xl sm:text-4xl text-foreground">Банки и безопасность</h1>
+            </div>
+            <p className="text-muted-foreground text-lg">Как пользоваться банком и защититься от мошенников</p>
+          </div>
+          <img
+            src="https://cdn.poehali.dev/projects/dca81a1f-79e8-42d9-aa90-a134fc117a6d/files/52af9668-18ec-4a8f-a1e7-75693207fb4d.jpg"
+            alt="Щит защищает от мошенников"
+            className="w-36 sm:w-44 rounded-2xl shadow-md object-cover flex-shrink-0 mx-auto sm:mx-0"
+            style={{ aspectRatio: "1/1" }}
+          />
         </div>
-        <p className="text-muted-foreground text-lg">Как пользоваться банком и защититься от мошенников</p>
       </div>
       <div className="bg-white rounded-2xl border-2 border-border p-6 space-y-4">
         <h3 className="font-serif font-bold text-xl text-foreground">Как отличить настоящее приложение банка</h3>
@@ -252,11 +294,21 @@ export function GosuslugiPage({ navigate }: { navigate: (s: Section) => void }) 
         <button onClick={() => navigate("elderly")} className="text-primary hover:underline text-sm flex items-center gap-1 mb-4">
           <Icon name="ChevronLeft" size={16} /> Назад
         </button>
-        <div className="flex items-center gap-4 mb-2">
-          <span className="text-5xl">🏛</span>
-          <h1 className="font-serif font-black text-3xl sm:text-4xl text-foreground">Госуслуги</h1>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+          <div className="flex-1">
+            <div className="flex items-center gap-4 mb-2">
+              <span className="text-5xl">🏛</span>
+              <h1 className="font-serif font-black text-3xl sm:text-4xl text-foreground">Госуслуги</h1>
+            </div>
+            <p className="text-muted-foreground text-lg">Запись к врачу, справки, документы — всё в одном месте</p>
+          </div>
+          <img
+            src="https://cdn.poehali.dev/projects/dca81a1f-79e8-42d9-aa90-a134fc117a6d/files/5a93233d-ac1e-4786-85e4-813fa98c3094.jpg"
+            alt="Иконка Госуслуг"
+            className="w-36 sm:w-44 rounded-2xl shadow-md object-cover flex-shrink-0 mx-auto sm:mx-0"
+            style={{ aspectRatio: "1/1" }}
+          />
         </div>
-        <p className="text-muted-foreground text-lg">Запись к врачу, справки, документы — всё в одном месте</p>
       </div>
       <div className="bg-white rounded-2xl border-2 border-border p-6">
         <h3 className="font-serif font-bold text-xl text-foreground mb-4">Что такое Госуслуги?</h3>
