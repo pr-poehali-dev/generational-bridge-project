@@ -141,6 +141,26 @@ export function PhonePage({ navigate }: { navigate: (s: Section) => void }) {
         </div>
         <p className="text-muted-foreground text-lg">Как звонить, писать сообщения и пользоваться телефоном</p>
       </div>
+
+      {/* Реальный скриншот — приложение звонков Android */}
+      <div className="bg-white rounded-2xl border-2 border-border p-5">
+        <p className="font-serif font-bold text-lg text-foreground mb-1">Так выглядит приложение «Телефон»:</p>
+        <p className="text-muted-foreground text-sm mb-4">Именно такой экран вы увидите при нажатии на зелёную трубку</p>
+        <div className="flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Android_lollipop_phone_app.jpg"
+            alt="Реальный скриншот приложения Телефон на Android"
+            className="w-44 rounded-2xl shadow-md object-cover flex-shrink-0 mx-auto sm:mx-0 border border-border"
+          />
+          <ul className="space-y-3 text-base text-foreground pt-1">
+            <li className="flex gap-2 items-start"><span className="text-green-600 font-bold text-lg leading-none mt-0.5">●</span><span>Зелёная кнопка внизу — позвонить</span></li>
+            <li className="flex gap-2 items-start"><span className="text-red-500 font-bold text-lg leading-none mt-0.5">●</span><span>Красная кнопка — завершить звонок</span></li>
+            <li className="flex gap-2 items-start"><span className="text-blue-500 font-bold text-lg leading-none mt-0.5">●</span><span>«Контакты» — ваш список знакомых</span></li>
+            <li className="flex gap-2 items-start"><span className="text-blue-500 font-bold text-lg leading-none mt-0.5">●</span><span>«Набор номера» — ввести цифры вручную</span></li>
+          </ul>
+        </div>
+      </div>
+
       <StepBlock title="Как позвонить" steps={[
         "Найдите зелёную трубку на экране и нажмите на неё",
         "Нажмите «Контакты» — это список ваших знакомых",
@@ -212,6 +232,25 @@ export function BankPage({ navigate }: { navigate: (s: Section) => void }) {
           </div>
         </div>
       </div>
+      {/* Реальный скриншот Android — домашний экран */}
+      <div className="bg-white rounded-2xl border-2 border-border p-5">
+        <p className="font-serif font-bold text-lg text-foreground mb-1">Как выглядит главный экран Android:</p>
+        <p className="text-muted-foreground text-sm mb-4">Приложение банка находится среди значков — ищите его название</p>
+        <div className="flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/58/Android_Lollipop_screenshot.png"
+            alt="Реальный скриншот главного экрана Android"
+            className="w-44 rounded-2xl shadow-md object-contain flex-shrink-0 mx-auto sm:mx-0 border border-border bg-gray-50"
+            style={{ maxHeight: "220px" }}
+          />
+          <ul className="space-y-3 text-base text-foreground pt-1">
+            <li className="flex gap-2 items-start"><span className="text-blue-500 font-bold text-lg leading-none mt-0.5">●</span><span>Значки приложений — на главном экране</span></li>
+            <li className="flex gap-2 items-start"><span className="text-blue-500 font-bold text-lg leading-none mt-0.5">●</span><span>Нажмите один раз на значок банка, чтобы открыть</span></li>
+            <li className="flex gap-2 items-start"><span className="text-green-600 font-bold text-lg leading-none mt-0.5">●</span><span>Если не видите — проведите пальцем вверх</span></li>
+          </ul>
+        </div>
+      </div>
+
       <StepBlock title="Как проверить баланс" steps={[
         "Откройте приложение банка",
         "Войдите с вашим паролем",
@@ -280,6 +319,26 @@ export function GosuslugiPage({ navigate }: { navigate: (s: Section) => void }) 
         "Введите ваш номер телефона",
         "На телефон придёт код из СМС — введите его",
       ]} />
+      {/* Реальный скриншот Play Market */}
+      <div className="bg-white rounded-2xl border-2 border-border p-5">
+        <p className="font-serif font-bold text-lg text-foreground mb-1">Как выглядит Google Play (Плэй Маркет):</p>
+        <p className="text-muted-foreground text-sm mb-4">Именно здесь нужно найти и скачать приложение «Госуслуги»</p>
+        <div className="flex flex-col sm:flex-row gap-5 items-start">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Play_App_Download.png"
+            alt="Реальный скриншот Google Play Market"
+            className="w-44 rounded-2xl shadow-md object-contain flex-shrink-0 mx-auto sm:mx-0 border border-border bg-gray-50"
+            style={{ maxHeight: "220px" }}
+          />
+          <ul className="space-y-3 text-base text-foreground pt-1">
+            <li className="flex gap-2 items-start"><span className="text-blue-500 font-bold text-lg leading-none mt-0.5">●</span><span>Строка поиска вверху — введите «Госуслуги»</span></li>
+            <li className="flex gap-2 items-start"><span className="text-green-600 font-bold text-lg leading-none mt-0.5">●</span><span>Зелёная кнопка «Установить» — нажмите её</span></li>
+            <li className="flex gap-2 items-start"><span className="text-blue-500 font-bold text-lg leading-none mt-0.5">●</span><span>Иконка с синим цветом — это настоящее приложение</span></li>
+            <li className="flex gap-2 items-start"><span className="text-red-500 font-bold text-lg leading-none mt-0.5">⚠</span><span>Скачивайте только из Play Market или App Store</span></li>
+          </ul>
+        </div>
+      </div>
+
       <StepBlock title="Как установить приложение" steps={[
         "Откройте Play Market на телефоне",
         "В строке поиска напечатайте «Госуслуги»",
