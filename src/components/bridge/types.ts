@@ -1,4 +1,4 @@
-export type Section = "home" | "elderly" | "youth" | "phone" | "bank" | "gosuslugi" | "everyday" | "about";
+export type Section = "home" | "elderly" | "youth" | "phone" | "bank" | "gosuslugi" | "everyday" | "about" | "faq";
 
 export const FONT_SIZES = [
   { label: "А", scale: 1, title: "Обычный" },
@@ -10,6 +10,7 @@ export const NAV_ITEMS: { id: Section; label: string; emoji: string }[] = [
   { id: "home", label: "Главная", emoji: "🏠" },
   { id: "elderly", label: "Пожилым 60+", emoji: "🟦" },
   { id: "youth", label: "Молодёжи", emoji: "⭐" },
+  { id: "faq", label: "Вопросы", emoji: "❓" },
   { id: "about", label: "О проекте", emoji: "🌉" },
 ];
 

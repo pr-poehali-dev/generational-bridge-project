@@ -4,36 +4,42 @@
 
 @layer base {
   :root {
-    --background: 45 30% 97%;
-    --foreground: 220 30% 10%;
+    /* Фон — очень тёплый молочный */
+    --background: 40 35% 96%;
+    --foreground: 220 35% 13%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 30% 10%;
+    /* Карточки — чистый белый с лёгким тёплым оттенком */
+    --card: 40 20% 99%;
+    --card-foreground: 220 35% 13%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 30% 10%;
+    --popover: 40 20% 99%;
+    --popover-foreground: 220 35% 13%;
 
-    --primary: 214 80% 30%;
+    /* Primary — насыщенный индиго-синий */
+    --primary: 222 65% 28%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 38 90% 50%;
-    --secondary-foreground: 220 30% 10%;
+    /* Secondary — янтарно-золотой, тёплый акцент */
+    --secondary: 36 95% 52%;
+    --secondary-foreground: 220 35% 13%;
 
-    --muted: 45 20% 92%;
-    --muted-foreground: 220 15% 40%;
+    /* Muted — бежевый приглушённый */
+    --muted: 40 25% 90%;
+    --muted-foreground: 220 15% 42%;
 
-    --accent: 145 60% 30%;
+    /* Accent — тёплый зелёный (мягкий, не кричащий) */
+    --accent: 152 48% 32%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 80% 45%;
+    /* Destructive — насыщенный тёплый красный */
+    --destructive: 4 75% 46%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 80%;
-    --input: 220 15% 80%;
-    --ring: 214 80% 30%;
+    --border: 220 18% 84%;
+    --input: 220 18% 84%;
+    --ring: 222 65% 28%;
 
     --radius: 1rem;
-
     --font-size-scale: 1;
   }
 }
@@ -89,7 +95,7 @@
 
   .card-hover:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(0, 60, 120, 0.15);
+    box-shadow: 0 12px 32px rgba(30, 50, 120, 0.13);
   }
 
   .nav-link {
@@ -112,25 +118,6 @@
   .nav-link:hover::after,
   .nav-link.active::after {
     width: 100%;
-  }
-
-  .step-card {
-    counter-increment: step;
-  }
-
-  .step-card::before {
-    content: counter(step);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background: hsl(var(--primary));
-    color: white;
-    font-weight: 800;
-    font-size: 1.1rem;
-    flex-shrink: 0;
   }
 
   .steps-container {

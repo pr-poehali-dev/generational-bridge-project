@@ -3,6 +3,7 @@ import Icon from "@/components/ui/icon";
 import { Section, FONT_SIZES, NAV_ITEMS, ELDERLY_SUB_ITEMS } from "@/components/bridge/types";
 import { HomePage, ElderlyPage, PhonePage, BankPage, GosuslugiPage, EverydayPage } from "@/components/bridge/section-pages";
 import { YouthPage, AboutPage } from "@/components/bridge/youth-about-pages";
+import { FaqPage } from "@/components/bridge/faq-page";
 
 export default function Index() {
   const [active, setActive] = useState<Section>("home");
@@ -115,6 +116,7 @@ export default function Index() {
         {active === "gosuslugi" && <GosuslugiPage navigate={navigate} />}
         {active === "everyday" && <EverydayPage navigate={navigate} />}
         {active === "youth" && <YouthPage />}
+        {active === "faq" && <FaqPage navigate={navigate} />}
         {active === "about" && <AboutPage navigate={navigate} />}
       </main>
 
